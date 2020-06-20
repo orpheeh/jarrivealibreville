@@ -1,0 +1,31 @@
+{
+  "name": "jarrivealibreville",
+  "version": "1.0.0",
+  "description": "Application client pour la PME j'arrive à libreville",
+  "main": "app.js",
+  "dependencies": {
+    "koa": "^2.12.1",
+    "koa-router": "^9.0.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.3.0",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orpheeh/jarrivealibreville.git"
+  },
+  "keywords": [
+    "Koa",
+    "MongoDB"
+  ],
+  "author": "Orphée <norpheehounkponou@gmail.com, orpheenve.xyz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orpheeh/jarrivealibreville/issues"
+  },
+  "homepage": "https://github.com/orpheeh/jarrivealibreville#readme"
+}
