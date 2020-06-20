@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Proza Libre', sans-serif;
+    transition: 0.4s;
+}
+
+.standard-button {
+    background-color: #E1CF2F;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    padding: 78px;
+    padding-bottom: 48px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+

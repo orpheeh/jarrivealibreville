@@ -1,0 +1,297 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: 1px -1px 10px #777777;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 40;
+}
+
+header .app-title img {
+    width: 78px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header .app-title p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .app-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.direction-button {
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+}
+
+.proposition-valeurs {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.proposition-valeur h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    padding: 20px;
+    margin-bottom: 32px;
+    width: 50%;
+}
+
+.proposition-valeur {
+    display: none;
+}
+
+.current-pv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.proposition-valeur-nav-button {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    z-index: 10;
+}
+
+.proposition-valeur-nav-button button {
+    opacity: 0.6;
+    background-color: transparent;
+}
+
+.proposition-valeur-nav-button button:hover {
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.proposition-valeur-nav-button button:focus {
+    outline: none;
+}
+
+.apropos {
+    display: grid;
+    grid-template-columns: 60% 20%;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.apropos img {
+    height: auto;
+}
+
+.presentation p {
+    padding: 20px;
+    text-align: justify;
+}
+
+.site-marchands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-marchand-icon {
+    width: 20%;
+    height: auto;
+    filter: saturate(0);
+}
+
+.resultats {
+    margin-top: 80px;
+    background: linear-gradient(#000000cc, #000000cc), url(https://images.unsplash.com/photo-1578269174936-2709b6aeb913?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.all-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.result .value {
+    font-size: 48px;
+}
+
+.result i {
+    padding: 12px;
+    font-size: 16px;
+}
+
+.resultats .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.resultats .title i {
+    color: #b99f09;
+}
+
+.resultats .title p {
+    border-bottom: 2px solid #b99f09;
+    display: inline-block;
+    color: #b99f09;
+    width: fit-content;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.prestations {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.prestations > div {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prestations > div p {
+    text-align: center;
+    padding: 16px;
+}
+
+.prestations > div a {
+    margin-top: 24px;
+}
+
+.achat-import {
+    background-color: #717FFD;
+    color: white;
+}
+
+.import {
+    background-color: #ECECEC;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.testimonial {
+    padding: 40px;
+    width: 30%;
+}
+
+.testimonial i {
+    font-size: 40px;
+    position: relative;
+    left: -40px;
+    color: #A6A6A6;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.socials i {
+    font-size: 40px;
+}
+
+footer {
+    background: linear-gradient(#000000cc, #000000cc), url(/img/libreville.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 80px;
+}
+
+footer p {
+    padding-bottom: 40px;
+    font-size: 18px;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
