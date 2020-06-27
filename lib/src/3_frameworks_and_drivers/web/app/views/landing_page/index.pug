@@ -15,9 +15,10 @@ html
         p J'arrive à Libreville
       
       if user
-        a(href="/mon_compte" class="simple-link") 
+        - let fullname = user.nom + " " + user.prenom;
+        a(href="/mon_compte" class="username") 
           i(class="far fa-smile")
-          span Mon compte client
+          span=fullname
       else
         nav
           a(href="/inscription") Inscription

@@ -12,7 +12,10 @@ html
   body
     header
       .app-title
-        img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
+        a(href="#" onclick="toggleDrawer()" class="menu-button")
+          i(class="fa fa-bars")
+        a(href="/" class="logo-link")
+         img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
         p J'arrive à Libreville
 
       a(class="username" onclick="toggleProfilMenu()") 
@@ -29,7 +32,7 @@ html
 
         a(href="#" class="update-profil" onclick="changeMenu(this, '.profil')") Modifier le profil
         .bottom
-          a(href="#") Déconnexion         
+          a(href="/deconnexion") Déconnexion         
       nav.drawer
         a(href="#" class="drawer-option facture-item" onclick="changeMenu(this, '.facture')") Mes factures
         a(href="#" class="drawer-option commande-item current-option" onclick="changeMenu(this, '.commande')") Mes commandes
