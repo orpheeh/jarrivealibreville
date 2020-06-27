@@ -21,6 +21,10 @@ header {
     z-index: 40;
 }
 
+.logo-jal {
+    padding: 5%;
+}
+
 header .app-title img {
     width: 78px;
     height: auto;
@@ -89,3 +93,18 @@ h2 {
     width: 100%;
 }
 
+.simple-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #33811c;
+}
+
+.simple-link:hover {
+    text-decoration: underline;
+}
+
+.simple-link i {
+    padding-right: 8px;
+    font-size: 24px;
+}

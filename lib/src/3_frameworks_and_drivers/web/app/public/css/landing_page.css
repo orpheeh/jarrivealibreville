@@ -79,6 +79,7 @@
 }
 
 .apropos img {
+    width: 100%;
     height: auto;
 }
 
@@ -163,9 +164,10 @@
     grid-template-columns: 50% 50%;
     margin-top: 40px;
     margin-bottom: 80px;
+    margin: 0 10%;
 }
 
-.prestations > div {
+.prestations>div {
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -173,17 +175,21 @@
     align-items: center;
 }
 
-.prestations > div p {
+.prestations>div p {
     text-align: center;
     padding: 16px;
 }
 
-.prestations > div a {
+.prestations>div a {
     margin-top: 24px;
 }
 
 .achat-import {
     background-color: #717FFD;
+    color: white;
+}
+
+.achat-import h2 {
     color: white;
 }
 
@@ -256,5 +262,51 @@ footer p {
     }
     to {
         opacity: 1
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .app-title p {
+        display: none;
+    }
+    .current-pv h1 {
+        width: 100%;
+    }
+    .apropos {
+        display: flex;
+        flex-direction: column;
+    }
+    .apropos img {
+        width: 50%;
+        height: auto;
+    }
+    .site-marchands {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .resultats .all-results {
+        display: flex;
+        flex-direction: column;
+    }
+    .all-results .result {
+        border-bottom: 1px solid #ECECEC;
+        padding: 20px;
+    }
+    .all-results .result .value {
+        font-size: 24px;
+    }
+    .prestations {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .testimonial {
+        width: 100%;
     }
 }
