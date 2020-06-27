@@ -6,6 +6,60 @@ html
     link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="/css/style.css")
-    link(rel="stylesheet" href="/css/landing_page.css")
+    link(rel="stylesheet" href="/css/inscription.css")
 
   body
+    header
+      .app-title
+        img(src="/img/logo-jal.png"  class="logo-jal" alt="Logo de j'arrive à libreville")
+        p J'arrive à Libreville
+      nav
+        a(href="/") Acceuil
+
+    h1 Création de compte
+    main
+      .explications
+        h2 Pourquoi créer un compte?
+        p Pour pouvoir accéder aux services de j'arrive à Libreville il faut créer un compte sur la plateforme client.
+        p Cela vous permettra de suivre vos commande et avoir un historique de vos facture ainsi que obtenir de l'aide plus facilement.
+      
+      form(action="/inscription" method="post")
+        h2 Remplissez le formulaire ci-dessous
+        .form-group
+          input#email(type="email" name="email")
+          label(for="email") Adresse Email
+
+        .form-group
+          input#password(type="password" name="password")
+          label(for="password") Mot de passe
+
+        .form-group
+          input#confirm-password(type="password" name="confirm-password")
+          label(for="confirm-password") Confirmer le mot de passe
+
+        .fullname
+          .form-group
+            input#nom(type="text" name="nom")
+            label(for="nom") Nom
+
+          .form-group
+            input#prenom(type="text" name="prenom")
+            label(for="prenom") Prénom
+
+        .form-group
+          input#adresse(type="text" name="adresse")
+          label(for="adresse") Adresse
+
+        .form-group
+          input#pays(type="text" name="pays")
+          label(for="pays") Pays
+
+        button(class="standard-button") Je m'inscris
+
+        p En cliquant sur le bouton je m'inscris, vous acceptez les
+          a(href="#") conditions d'utilisation
+          span et la
+          a(href="#") politique de confidentialité
+          span de j'arrive à libreville
+  
+  script(src="/js/inscription.js")

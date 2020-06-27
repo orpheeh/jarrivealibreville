@@ -6,6 +6,48 @@
     transition: 0.4s;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: 1px -1px 10px #777777;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 40;
+}
+
+.logo-jal {
+    padding: 5%;
+}
+
+header .app-title img {
+    width: 78px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header .app-title p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .app-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
 .standard-button {
     background-color: #E1CF2F;
     color: white;
@@ -14,6 +56,15 @@
     text-align: center;
     border-radius: 8px;
     display: inline-block;
+    border: none;
+}
+
+.standard-button:focus {
+    outline: none;
+}
+
+.standard-button:hover {
+    cursor: pointer;
 }
 
 h1 {
@@ -24,3 +75,36 @@ h1 {
     margin-top: 40px;
 }
 
+h2 {
+    color: #717FFD;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.form-group input, select {
+    border: 1px solid #cccccc;
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.simple-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #33811c;
+}
+
+.simple-link:hover {
+    text-decoration: underline;
+}
+
+.simple-link i {
+    padding-right: 8px;
+    font-size: 24px;
+}
