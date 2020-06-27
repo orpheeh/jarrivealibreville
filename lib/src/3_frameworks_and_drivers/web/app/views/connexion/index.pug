@@ -6,6 +6,31 @@ html
     link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="/css/style.css")
-    link(rel="stylesheet" href="/css/landing_page.css")
+    link(rel="stylesheet" href="/css/connexion.css")
 
   body
+    header
+      .app-title
+        a(href="/")
+          img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
+        p J'arrive à Libreville
+
+      a(href="/inscription") Je n'ai pas encore de compte
+
+    main
+      if error
+        p(class="error")=error
+      h1 Je me connecte à mon compte
+
+      form(action="/connexion" method="post")
+        .form-group
+          input#email(type="email" name="email")
+          label(for="email") Adresse Email
+
+        .form-group
+          input#password(type="password" name="password")
+          label(for="password") Mot de passe
+
+        button(class="standard-button") Je me connecte
+
+        a(href="#" class="forground-link") J'ai oublié mon mot de passe

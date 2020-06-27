@@ -37,3 +37,29 @@ form p {
 .explications p {
     padding-top: 32px;
 }
+
+@media screen and (max-width: 900px){
+    main {
+        flex-direction: column-reverse;
+    }
+    .form-group {
+        width: 100%;
+    }
+
+    .fullname {
+        width: 100%;
+    }
+
+    .app-title p {
+        display: none;
+    }
+ 
+    h1 {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .explications {
+        padding: 20px;
+    }
+ }
