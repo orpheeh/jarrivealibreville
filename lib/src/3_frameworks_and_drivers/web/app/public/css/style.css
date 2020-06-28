@@ -86,7 +86,7 @@ h2 {
     align-items: flex-start;
 }
 
-.form-group input, select {
+.form-group input, select, textarea {
     border: 1px solid #cccccc;
     padding: 8px 16px;
     border-radius: 8px;
@@ -115,4 +115,11 @@ a {
 .forground-link {
     color: blue;
     font-size: 16px;
+}
+
+.circle-text {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    padding: 8px;
 }
