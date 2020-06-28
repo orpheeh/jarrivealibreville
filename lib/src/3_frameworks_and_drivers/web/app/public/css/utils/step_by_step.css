@@ -1,0 +1,7 @@
+.one-step {
+    display: none;
+}
+
+.current-step {
+    display: flex;
+}
