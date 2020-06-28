@@ -8,24 +8,36 @@ html
     link(rel="stylesheet" href="/css/style.css")
     link(rel="stylesheet" href="/css/achat_import.css")
     link(rel="stylesheet" href="/css/utils/step_by_step.css")
-  
+
   body
     header
       .app-title
         img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
         p J'arrive à Libreville
-      
+
       - let fullname = user.nom + " " + user.prenom;
       a(href="/mon_compte" class="username") 
         i(class="far fa-smile")
         span=fullname
-    
+
     main
-      include bienvenue.pug
-      include explication.pug
-      include site_marchand.pug
-      include facture.pug
-      include paiement.pug
-      include remerciement.pug
+      .one-step
+        include bienvenue.pug
+
+      .one-step
+        include explication.pug
+
+      .one-step
+        include site_marchand.pug
+
+      .one-step
+        include facture.pug
+
+      .one-step
+        include paiement.pug
+
+      .one-step
+        include remerciement.pug
 
     script(src="/js/achat_import.js")
+    script(src="/js/utils/step_by_step.js")

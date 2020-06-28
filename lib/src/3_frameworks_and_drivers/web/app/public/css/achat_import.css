@@ -71,8 +71,14 @@ button {
 }
 
 .sites a img {
-    width: 150px;
+    width: 100px;
     height: auto ;
+    padding: 16px;
+}
+
+.sites a img:hover {
+    width: 150px;
+    box-shadow: 1px 2px 5px #cccccc;
 }
 
 .paiements {
@@ -95,4 +101,8 @@ button {
 .paiement p {
     padding: 16px;
     font-weight: 700;
+}
+
+#site_marchand{
+  width: 100%;
 }
