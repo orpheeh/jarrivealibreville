@@ -33,3 +33,12 @@
 .contact .icon {
     font-size: 32px;
 }
+
+.steps p {
+    text-align: start;
+}
+
+.step {
+    justify-content: flex-start;
+    align-items: flex-start;
+}

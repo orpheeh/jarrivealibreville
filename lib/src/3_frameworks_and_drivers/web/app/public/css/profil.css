@@ -175,6 +175,11 @@ form button {
     margin-top: 20px;
 }
 
+tr:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
 @media screen and (max-width: 900px) {
     .menu-button {
         display: block;
