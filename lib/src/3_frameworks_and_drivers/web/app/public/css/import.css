@@ -1,0 +1,35 @@
+.steps {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact p {
+    padding: 8px;
+}
+
+.contact .value {
+    color: green;
+}
+
+.contact .time {
+    color: #444444;
+}
+
+.contact .icon {
+    font-size: 32px;
+}
