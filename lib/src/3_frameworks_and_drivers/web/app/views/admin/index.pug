@@ -1,0 +1,32 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="/css/style.css")
+    link(rel="stylesheet" href="/css/admin/style.css")
+
+  body
+    header
+      .app-title
+        img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
+        p J'arrive à Libreville
+      p Administrateur
+
+    main
+      h1 Toute les commandes
+      div(style="overflow-x:auto;")
+        table
+          thead
+            tr
+              th Référence
+              th Auteur (nom/email/téléphone)
+              th Date
+              th Panier
+              th Facture
+              th Paiement
+          tbody(class="commandes")
+
+    script(src="/js/admin/script.js")
