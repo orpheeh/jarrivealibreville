@@ -24,7 +24,7 @@ html
         p Pour pouvoir accéder aux services de j'arrive à Libreville il faut créer un compte sur la plateforme client.
         p Cela vous permettra de suivre vos commande et avoir un historique de vos facture ainsi que obtenir de l'aide plus facilement.
       
-      form(action="/inscription" method="post")
+      form(action="/inscription" method="post" enctype = "multipart/form-data")
         h2 Remplissez le formulaire ci-dessous
         .form-group
           input#email(type="email" name="email")
