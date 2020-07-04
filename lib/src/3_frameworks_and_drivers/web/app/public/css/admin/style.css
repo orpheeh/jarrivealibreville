@@ -1,0 +1,24 @@
+
+table {
+    margin: 20px;
+}
+
+.form-group input {
+    display: none;
+}
+
+.form-group label {
+    display: block;
+    background-color: #444444;
+    padding: 8px 32px;
+    color: white;
+}
+
+.form-group {
+    padding: 8px;
+}
+
+.form-group label:hover {
+    cursor: pointer;
+    background-color: #111111;
+}
