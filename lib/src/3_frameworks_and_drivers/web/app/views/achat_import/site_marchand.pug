@@ -30,7 +30,9 @@ section#site_marchand
   p(style="margin-bottom: 40px;") Ensuite venez coller le lien du panier ici...
 
   .form-group
-    input#panier(type="text" name="panier" placeholder="Collez le lien du panier ici")
-    label(for="panier") Lien du panier
+    input#panier(type="file" name="panier" placeholder="Uploadez la page web imprimé" accept="application/pdf" onchange="loadPanier(this)")
+    label(for="panier") 
+      span Uploadez la page web imprimé
+      span.filename
   
   button(class="standard-button" style="margin-top:20px;" onclick="sendPanierToCommande()") Valider
