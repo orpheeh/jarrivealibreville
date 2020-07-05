@@ -3,15 +3,16 @@ table {
     margin: 20px;
 }
 
-.form-group input[type='file'] {
-    display: none;
-}
 
 .form-group label+input[type="file"] {
     display: block;
     background-color: #444444;
     padding: 8px 32px;
     color: white;
+}
+
+.form-group input[type='file'] {
+    display: none;
 }
 
 .form-group {
