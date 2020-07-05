@@ -1,0 +1,29 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="/css/style.css")
+    link(rel="stylesheet" href="/css/admin/style.css")
+    link(rel="stylesheet" href="/css/admin/login.css")
+
+
+  body
+    img(src="/img/logo-jal.png" width="100px" height="auto" alt="logo j'arrive à Libreville")
+
+    h1 Ouvrir une session administrateur
+
+    form(action="/admin/auth" method="post")
+      .form-group
+        input#username(type="text" name="username")
+        label(for="username") Nom d'utilisateur
+
+      .form-group
+        input#password(type="password" name = "password")
+        label(for="password") Mot de passe
+
+      button(class="standard-button") Connexion
+
+    p.copyright Copyright &copy; J'arrive à Libreville - 2020 - Tous droit réservés
