@@ -189,6 +189,23 @@ thead {
     opacity: 0;
 }
 
+.actions-cn button {
+    background-color: transparent;
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border: none;
+    font-weight: bold;
+}
+
+.actions-cn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+}
+
 @media screen and (max-width: 900px) {
 
     header {
@@ -247,6 +264,10 @@ thead {
         display: none;
     }
 
+    td {
+        vertical-align: middle;
+    }
+
     .table-cn table thead {
         opacity: 1;
         margin: 0;
@@ -290,5 +311,6 @@ thead {
     h1 {
         margin-bottom: 8px;
         padding-bottom: 8px;
+        text-align: center;
     }
 }

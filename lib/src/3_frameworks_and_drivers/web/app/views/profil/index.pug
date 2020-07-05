@@ -42,8 +42,8 @@ html
         .commande(class="current-content")
           h1 Mes commandes
           .buttons
-            button(onclick="window.location='/achat_import/0/null'") Nouvelle Achat + Import
-            button(onclick="window.location='/import/0/null'") Nouvelle Import
+            button(onclick="window.location='/achat_import/0/null'" class="standard-button") Nouvelle Achat + Import
+            button(onclick="window.location='/import/0/null'" class="standard-button") Nouvelle Import
 
           table(class="hide-response")
             thead
@@ -83,6 +83,10 @@ html
             .form-group
               input#adresse(type="text" name="adresse" value=user.adresse)
               label(for="adresse") Adresse
+
+            .form-group
+              input#telephone(type="text" name="telephone" value=user.telephone)
+              label(for="telephone") Téléphone
 
             .form-group
               input#pays(type="text" name="pays" value=user.pays)

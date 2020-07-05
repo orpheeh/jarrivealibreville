@@ -25,8 +25,8 @@ html
         h2 Pourquoi créer un compte?
         p Pour pouvoir accéder aux services de j'arrive à Libreville il faut créer un compte sur la plateforme client.
         p Cela vous permettra de suivre vos commande et avoir un historique de vos facture ainsi que obtenir de l'aide plus facilement.
-      
-      form(action="/inscription" method="post" enctype = "multipart/form-data")
+
+      form(action="/inscription" method="post")
         h2 Remplissez le formulaire ci-dessous
         .form-group
           input#email(type="email" name="email")
@@ -35,10 +35,6 @@ html
         .form-group
           input#password(type="password" name="password")
           label(for="password") Mot de passe
-
-        .form-group
-          input#confirm-password(type="password" name="confirm-password")
-          label(for="confirm-password") Confirmer le mot de passe
 
         .fullname
           .form-group
@@ -54,6 +50,10 @@ html
           label(for="adresse") Adresse
 
         .form-group
+          input#telephone(type="text" name="telephone")
+          label(for="telephone") Téléphone
+
+        .form-group
           input#pays(type="text" name="pays")
           label(for="pays") Pays
 
@@ -64,5 +64,5 @@ html
           span et la
           a(href="#") politique de confidentialité
           span de j'arrive à libreville
-  
+
   script(src="/js/inscription.js")
