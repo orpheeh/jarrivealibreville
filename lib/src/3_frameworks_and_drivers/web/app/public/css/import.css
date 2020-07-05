@@ -42,3 +42,42 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+.adresse-livraison p {
+    text-align: left;
+    padding-top: 8px;
+}
+
+.adresse-livraison img {
+    height: 32px;
+    width: auto;
+}
+
+.adresse-livraison {
+    padding: 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.adresse-livraison strong {
+    padding-right: 8px;
+}
+
+@media screen and (max-width: 1024px){
+    .steps {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .step *{
+       text-align: start;
+    }  
+
+    .convoits {
+        grid-template-columns: auto;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+}

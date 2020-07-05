@@ -131,12 +131,17 @@ section {
 }
 
 .convoit i {
-    font-size: 48px;
+    font-size: 32px;
 }
 
 .convoit div {
     text-align: left;
     padding-left: 20px;
+}
+
+
+.convoit * {
+    color: #777777;
 }
 
 .convoit h3 {
@@ -157,4 +162,23 @@ section {
 .selected-convoit {
     background-color: #4CAF50;
     color: white;
+}
+
+.selected-convoit * {
+    color: white;
+}
+
+@media screen and (max-width: 1024px){
+    .steps {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .step *{
+       text-align: start;
+    }  
+
+    .convoits {
+        grid-template-columns: auto;
+    }
 }
