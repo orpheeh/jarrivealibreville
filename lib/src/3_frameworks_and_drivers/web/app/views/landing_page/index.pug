@@ -3,10 +3,12 @@ html
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title #{title}
+    link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
     link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="/css/style.css")
     link(rel="stylesheet" href="/css/landing_page.css")
+    link(rel="shortcut icon" type="image/png" href="/img/logo-jal.png")
 
   body
     header
@@ -43,15 +45,15 @@ html
     h1 Qui sommes nous?
 
     section(class="apropos")
-      .presentation
+      .presentation(data-aos="fade-up")
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor mauris, faucibus a sem at, bibendum porttitor risus. Proin eget lectus nulla. Quisque ut nisl tincidunt, consectetur justo a, porta quam. Praesent id ante nec orci tincidunt fringilla nec vestibulum velit. Pellentesque odio risus, iaculis eu tortor sed, aliquet luctus enim. Morbi imperdiet eros ut viverra commodo. Etiam tempus sit amet arcu quis dictum. Donec bibendum velit ac elementum tempor.
         p Ut quis ex pretium, laoreet tellus quis, pulvinar metus. Proin ut sollicitudin erat. Duis sed faucibus neque. Duis leo turpis, auctor vitae eros a, mattis congue risus. Sed nibh metus, ornare et tempor vel, vulputate at est. Mauris scelerisque diam eu arcu auctor sodales at in velit. Quisque iaculis nulla id tristique viverra. Cras mollis leo diam, et dignissim diam ornare a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vestibulum pellentesque elit, sed fermentum leo volutpat vitae. Donec lorem lacus, volutpat in tellus vestibulum, fermentum malesuada metus. Cras fringilla maximus turpis, vel ultricies nibh vehicula et. Maecenas porttitor sit amet metus ac ornare.
 
       img(src="/img/logo-jal.png" alt="Logo de j'arrive à libreville")
     p(style="text-align:center; padding-top:20px; font-size:24px") Constitué votre panier sur n’importe quelle site de e-commerce
 
-    .site-marchands
-      img(class="site-marchand-icon" src="https://www.sujet24.com/wp-content/uploads/2019/06/amazon.jpg" alt="")
+    .site-marchands(data-aos="fade-up")
+      img(class="site-marchand-icon" src="/img/sites/amazon.png" alt="")
       img(class="site-marchand-icon" src="/img/sites/alibaba.png" alt="")
       img(class="site-marchand-icon" src="/img/sites/banggood.png" alt="")
       img(class="site-marchand-icon" src="/img/sites/engel.png" alt="")
@@ -73,15 +75,15 @@ html
     h1#prestation-title Que voulez vous faire?
 
     .prestations
-      .achat-import
+      .achat-import(data-aos="flip-left")
         h2 Achat + Import
-        p Je n’arrive pas à effectuer des achats en ligne, pouvez vous m’aider?
+        p(class="ptop") Je n’arrive pas à effectuer des achats en ligne, pouvez vous m’aider?
         p Oui! Choisissez les produits que vous voulez et nous les acheterons pour vous et les ferons venir à Libreville
         a(href="/achat_import/0/null" class="standard-button") Acheter un produit et faire venir à Libreville
 
-      .import
+      .import(data-aos="flip-right")
         h2 Import
-        p Je peux très bien faire les achats sur internet mais je cherche un moyen simple et fiable pour les faires venir à Libreville
+        p(class="ptop") Je peux très bien faire les achats sur internet mais je cherche un moyen simple et fiable pour les faires venir à Libreville
         p Ne cherchez plus! Nous mettons à votre disposition nos adresses de livraison
         a(href="/import/0/null" class="standard-button") Faire venir des produits à Libreville
 
@@ -91,22 +93,22 @@ html
         p Nos chiffres
 
       .all-results
-        .result
+        .result(data-aos="zoom-in-up")
           p.value +10,000
           i(class="fa fa-box-open")
           p Courses réalisés
 
-        .result
+        .result(data-aos="zoom-in-up")
           p.value +200
           i(class="fa fa-globe-asia")
           p Pays
 
-        .result
+        .result(data-aos="zoom-in-up")
           p.value -4
           i(class="fa fa-history")
           p Délai de livraison en jour
 
-        .result
+        .result(data-aos="zoom-in-up")
           p.value +90%
           i(class="fa fa-smile")
           p Taux de satisfaction
@@ -114,10 +116,10 @@ html
     h1 Ce que ils disent de nous
 
     .testimonials
-      .testimonial
+      .testimonial(data-aos="fade-right")
         i(class="fa fa-quote-left")
         p Donec vulputate iaculis nibh non facilisis. Fusce ut quam purus. Aenean id mollis ligula. Quisque egestas he.
-      .testimonial
+      .testimonial(data-aos="fade-left")
         i(class="fa fa-quote-left")
         p Donec vulputate iaculis nibh non facilisis. Fusce ut quam purus. Aenean id mollis ligula. Quisque egestas hendrerit mollis.
 
@@ -137,4 +139,6 @@ html
       p +241 065 77 07 29
       p Cité Pompidou, Libreville Gabon
 
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
     script(src="/js/landing_page.js")
+

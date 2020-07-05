@@ -185,8 +185,12 @@
     margin-top: 24px;
 }
 
+.ptop {
+    font-size: 18px;
+}
+
 .prestations>div p {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .achat-import {
@@ -261,6 +265,10 @@ footer p {
     to {
         opacity: 1
     }
+}
+
+footer p {
+    text-align: center;
 }
 
 @keyframes fade {
