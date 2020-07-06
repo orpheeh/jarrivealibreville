@@ -1,7 +1,7 @@
 FROM node
 
 ENV PORT 8080
-ENV DOMAIN https://jarrivealibreville.orpheenve.xyz
+ENV DOMAIN https://jarrivealibreville.com
 ENV MONGOADDR mongo
 
 WORKDIR /user/src/app

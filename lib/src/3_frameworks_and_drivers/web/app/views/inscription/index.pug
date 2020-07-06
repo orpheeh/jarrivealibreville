@@ -28,6 +28,8 @@ html
 
       form(action="/inscription" method="post")
         h2 Remplissez le formulaire ci-dessous
+        if error
+          label(style="color:red;")=error
         .form-group
           input#email(type="email" name="email")
           label(for="email") Adresse Email
