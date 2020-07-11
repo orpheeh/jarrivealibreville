@@ -15,21 +15,12 @@ html
       .app-title
         img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
         p J'arrive à Libreville
+      
+      nav
+        a(href="/admin/commandes") Commandes
+        a(href="/admin/cotation") Cotation
+
       p Administrateur
 
     main
-      h1 Toute les commandes
-      div(style="overflow-x:auto;")
-        table
-          thead
-            tr
-              th
-              th Référence
-              th Auteur (nom/email/téléphone)
-              th Date
-              th Panier
-              th Facture
-              th Paiement
-          tbody(class="commandes")
-
-    script(src="/js/admin/script.js")
+      block content

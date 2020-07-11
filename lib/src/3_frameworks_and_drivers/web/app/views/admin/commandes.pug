@@ -1,0 +1,19 @@
+extends index.pug
+
+block content
+  h1 Toutes les commandes
+  div(style="overflow-x:auto;")
+    table
+      thead
+        tr
+          th
+          th Référence
+          th Auteur (nom/email/téléphone)
+          th Date
+          th Panier
+          th Facture
+          th Paiement
+          th Cotation
+      tbody(class="commandes")
+
+  script(src="/js/admin/script.js")

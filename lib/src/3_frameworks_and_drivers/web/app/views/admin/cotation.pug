@@ -1,0 +1,36 @@
+extends index.pug
+
+block content
+  h1 Mise à jour des cotations
+
+  .cotations#avion
+    h2 Avion
+    .form-group
+      input(type="text" name="cotation-france-avion")
+      label() France
+
+    .form-group
+      input(type="text" name="cotation-chine-avion")
+      label() Chine
+
+    .form-group
+      input(type="text" name="cotation-maroc-avion")
+      label() Maroc
+
+  .cotations#bateau
+    h2 Bateau
+    .form-group
+      input(type="text" name="cotation-france-bateau")
+      label() France
+
+    .form-group
+      input(type="text" name="cotation-chine-bateau")
+      label() Chine
+
+    .form-group
+      input(type="text" name="cotation-maroc-bateau")
+      label() Maroc
+
+    button(class="standard-button" onclick="requestUpdate()") Enregistrer les modifications
+
+    script(src="/js/admin/cotation.js")
