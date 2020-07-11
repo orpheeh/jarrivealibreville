@@ -331,6 +331,6 @@ footer p {
     }
 
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
