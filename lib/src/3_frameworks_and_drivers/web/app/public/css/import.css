@@ -68,7 +68,7 @@
 
 .convoits {
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 40px;
@@ -152,5 +152,4 @@
     .convoits {
         grid-template-columns: auto;
     }
-
 }

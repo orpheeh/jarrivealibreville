@@ -41,19 +41,20 @@ button {
 
 .steps {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .step {
     padding: 16px;
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     grid-template-columns: auto auto;
 }
 
 .step p {
     font-size: 16px;
+    text-align: start;
 }
 
 .circle-text {
@@ -113,7 +114,7 @@ section {
 
 .convoits {
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 40px;
