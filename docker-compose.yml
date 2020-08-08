@@ -4,6 +4,8 @@ services:
         build: .
         ports: 
             - "2201:8080"
+        volumes:
+            - ./uploads:/user/src/app/uploads
         links: 
             - mongo
     mongo:
