@@ -4,7 +4,7 @@ body {
     width: 100vw;
     height: 100vh;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 h1 {
@@ -14,9 +14,7 @@ h1 {
 
 .copyright {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     color: #777777;
     font-size: 14px;
-    position: fixed;
-    bottom: 20px;
 }
