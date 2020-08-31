@@ -1,0 +1,68 @@
+section#site_marchand
+  h2 Choix du site marchand
+
+  p Rendez vous sur l'un des sites marchands suivants
+
+  .sites(style="margin-top: 20; margin-bottom: 40px")
+    a(href="https://www.amazon.fr/" target="blank")
+      img(src="/img/sites/amazon.png" alt="")
+    a(href="https://www.alibaba.com/" target="blank")
+      img(src="/img/sites/alibaba.png" alt="")
+    a(href="https://www.auctionexport.com/fr" target="blank")
+      img(src="/img/sites/auction.png" alt="")
+    a(href="https://www.lacentrale.fr/" target="blank")
+      img(src="/img/sites/lacentral.png" alt="")
+    a(href="https://www.gearbest.com/" target="blank")
+      img(src="/img/sites/gearbest.png" alt="")
+    a(href="https://www.lightinthebox.com/fr/" target="blank")
+      img(src="/img/sites/litb_logo.png" alt="")
+    a(href="https://shein.com/" target="blank")
+      img(src="/img/sites/shein.png" alt="")
+    a(href="https://taobao.com/" target="blank")
+      img(src="/img/sites/taobao.png" alt="")
+    a(href="https://www.mister-auto.com/" target="blank")
+      img(src="/img/sites/misterauto.svg" alt="")
+    a(href="https://wish.com/" target="blank")
+      img(src="/img/sites/wish.png" alt="")
+    a(href="https://aliexpress.com/" target="blank")
+      img(src="/img/sites/aliexpress.png" alt="")
+    a(href="https://ebay.com/" target="blank")
+      img(src="/img/sites/ebay.png" alt="")
+    a(href="https://fnac.com/" target="blank")
+      img(src="/img/sites/fnac.png" alt="")
+    a(href="https://www.veepee.fr/" target="blank")
+      img(src="/img/sites/vente_prive.png" alt="")
+    a(href="https://walmart.com/" target="blank")
+      img(src="/img/sites/walmart.png" alt="")
+    a(href="https://www.manomano.fr/" target="blank")
+      img(src="/img/sites/manomano.png" alt="")
+    a(href="https://otto.com/" target="blank")
+      img(src="/img/sites/otto.png" alt="")
+    a(href="https://jmbeex.shop/" target="blank")
+      img(src="/img/sites/jbmeex.png" alt="")
+    a(href="https://rakuten.com/" target="blank")
+      img(src="/img/sites/rakuten.png" alt="")
+    a(href="https://zentrada.network/" target="blank")
+      img(src="/img/sites/zentra.png" alt="")
+    a(href="https://cdiscount.com/" target="blank")
+      img(src="/img/sites/cdiscount.jpeg" alt="")
+
+  p(style="padding: 16px;") Comment voulez vous faire venir votre marchandise ?
+  .convoits
+    .convoit(onclick="changeConvoit('avion')" class="avion")
+      i(class="fas fa-plane")
+      h3 Avion
+
+    .convoit(onclick="changeConvoit('bateau')" class="selected-convoit bateau")
+      i(class="fa fa-ship")
+      h3 Bateau
+
+  p(style="margin-bottom: 40px;") Chargez la page imprimée du panier ici...
+
+  .form-group
+    input#panier(type="file" name="panier" placeholder="Uploadez la page web imprimé" accept="application/pdf" onchange="loadPanier(this)")
+    label(for="panier") 
+      span Uploadez la page web imprimé
+      span.filename
+
+  button(class="standard-button" style="margin-top:20px;" onclick="sendPanierToCommande()") Valider

@@ -1,0 +1,158 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="/css/style.css")
+    link(rel="stylesheet" href="/css/landing_page.css")
+    link(rel="shortcut icon" type="image/png" href="/img/logo-jal.png")
+
+  body
+    header
+      .app-title
+        img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
+        p J'arrive à Libreville
+
+      if user
+        - let fullname = user.nom + " " + user.prenom;
+        a(href="/mon_compte" class="username") 
+          i(class="far fa-smile")
+          span=fullname
+      else
+        nav
+          a(href="/inscription") Inscription
+          a(href="/connexion") Connexion
+
+    .propostion-valeurs(class="fade")
+      .proposition-valeur(class="current-pv" style="background-image: linear-gradient(#00000088, #00000088), url(https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=401&q=80)")
+        h1 faites vos achats à travers le monde et recevez les au Gabon. 
+        a(href="#prestation-title" class="standard-button") Je veux faire des achats en ligne
+      .proposition-valeur(style="background-image: linear-gradient(#00000088, #00000088), url(https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80)")
+        h1 Obtenez des devis et des cotations pour vos achats et transport.
+        a(href="/achat_import/0/null" class="standard-button") Recevez le en quelque clic
+      .proposition-valeur(style="background-image: linear-gradient(#00000088, #00000088), url(https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)")
+        h1 Utilisez nos adresses de livraison pour stocker vos colis. 
+        a(href="/import/0/null" class="standard-button") je veux faire venir un produit
+    .proposition-valeur-nav-button
+      button(class="direction-button" onclick="minusSlide()")
+        i(class="fa fa-chevron-left")
+      button(class="direction-button" onclick="plusSlide()")
+        i(class="fa fa-chevron-right")
+
+    h1 Qui sommes nous?
+
+    section(class="apropos")
+      .presentation(data-aos="fade-up")
+        p 
+          strong J’ARRIVE A LIBREVILLE
+          span est une société crée en 2019 par de jeunes gabonais diplômés en Finance d’entreprise. Il s’agit d’une
+          strong SARL
+          span qui a pour objet la fourniture des prestations de services dans le secteur de 
+          strong l’Import–Export au Gabon et à l’étranger.
+        p J’ARRIVE A LIBREVILLE propose aux entreprises et aux particuliers des prestations de transport en aérien et en maritime à des prix très attractifs incluant les frais de douane.
+        p J’ARRIVE A LIBREVILLE dispose de son propre service d’achat à l’étranger mais également de
+          strong deux entrepôts de stockage à Guangzhou et à Paris,
+          span ainsi que d’une 
+          strong adresse de livraison à Casablanca.
+        p Le siège social de J’ARRIVE A LIBREVILLE est situé au centre-ville de Libreville au quartier Montagne sainte. Aussi, l’entreprise compte 
+          strong des salariés répartis entre la Chine, la France, le Maroc et le Gabon.
+          span Nous faisons de la satisfaction du client et du respect des délais nos points focaux dans nos stratégies et politiques managériales.
+      img(src="/img/logo-jal.png" alt="Logo de j'arrive à libreville")
+    p(style="text-align:center; padding-top:20px; font-size:24px") Constituez votre panier sur n’importe quelle site de e-commerce.
+
+    .site-marchands(data-aos="fade-up")
+      img(class="site-marchand-icon" src="/img/sites/amazon.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/alibaba.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/banggood.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/engel.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/gearbest.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/litb_logo.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/shein.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/taobao.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/tomtop.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/wish.png" alt="")
+      img(class="site-marchand-icon" src="/img/sites/tomtop.png" alt="")
+      img(class="site-marchand-icon"  src="/img/sites/cdiscount.jpeg" alt="")
+
+    p(style="text-align:center; padding-top:20px; font-size:24px") Et nous nous occupons du reste grâce à nos partenaires.
+
+    .site-marchands
+      img(class="site-marchand-icon" src="/img/partenaire/bollore.png", alt="Bolloré")
+      img(class="site-marchand-icon" src="/img/partenaire/dhl_express.png", alt="DHL Express")
+
+    h1#prestation-title Que voulez vous faire?
+
+    .prestations
+      .achat-import(data-aos="flip-left")
+        h2 Devis + Achats + Import
+        p(class="ptop") J'aimerais obtenir un devis pour commander à l'étranger, pouvez vous m’aider?
+        p Oui ! Choisissez les produits que vous voulez et nous les commanderons pour vous et nous les transporterons jusqu'au Gabon.
+        a(href="/achat_import/0/null" class="standard-button") Commandez un colis et faire venir à Libreville 
+
+      .import(data-aos="flip-right")
+        h2 Import
+        p(class="ptop") Je fais mes achats sur internet et je récupère mon adresse de livraion à l'étranger. Mais je cherche un moyen simple et fiable pour les faires venir à Libreville
+        p Ne cherchez plus! Nous mettons à votre disposition nos adresses de livraison.
+        a(href="/import/0/null" class="standard-button") Faire venir des produits à Libreville
+
+    .resultats
+      .title
+        i(class="fas fa-sun")
+        p Nos chiffres
+
+      .all-results
+        .result(data-aos="zoom-in-up")
+          p.value +300
+          i(class="fa fa-box-open")
+          p Courses réalisés
+
+        .result(data-aos="zoom-in-up")
+          p.value 4
+          i(class="fa fa-globe-asia")
+          p Pays
+
+        .result(data-aos="zoom-in-up")
+          p.value -15
+          i(class="fa fa-history")
+          p Délai de livraison en jour
+
+        .result(data-aos="zoom-in-up")
+          p.value +60%
+          i(class="fa fa-smile")
+          p Taux de satisfaction
+
+    h1 Ce que ils disent de nous
+
+    .testimonials
+      .testimonial(data-aos="fade-right")
+        i(class="fa fa-quote-left")
+        p Comme par tout hasard je suis tombé sur votre page Facebook. Contact fais, j’ai apprécié la courtoisie et la disponibilité dont vous faite montre et surtout le professionnalisme dans la gérance. Mes pièces sont arrivées comme je le souhaitais ... . Le seul bémol est le temps de livraison, ce pourquoi je vous donnerais une note de 7/10.
+      .testimonial(data-aos="fade-left")
+        i(class="fa fa-quote-left")
+        p Merci à vous, client satisfait de votre prestation, réception en bon état d&#39;un colis en provenance de la chine. Merci.
+
+    p(style="font-size=24px; padding:20px; text-align:center;") Vous  voulez encore plus de témoignage? Visitez nous sur les réseaux sociaux.
+
+    .socials
+      a(href="https://www.linkedin.com/company/j-arrive-a-libreville")
+        i(class="fab fa-linkedin" style="color:#2867B2;")
+      a(href="https://www.facebook.com/standard.officiel")
+        i(class="fab fa-facebook-square" style="color:#4267B2;")
+      a(href="https://www.instagram.com/jalbv241/?hl=fr")
+        i(class="fab fa-instagram-square" style="color:#E1306C;")
+      a(href="https://wa.me/message/SSB3IRXBZHEFG1")
+        i(class="fab fa-whatsapp" style="color:#25D366;")
+
+    footer
+      h1 Nous contacter
+      p 
+       a(href="mailto:contact@jarrivealibreville.com" style="color: white;") contact@jarrivealibreville.com
+      p  +241 65 63 46 80 
+      p Montagne Sainte en face de l'immeuble SatCon, Libreville Gabon
+
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+    script(src="/js/landing_page.js")
+

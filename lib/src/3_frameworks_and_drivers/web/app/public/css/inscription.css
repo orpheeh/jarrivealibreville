@@ -1,0 +1,69 @@
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    padding: 20px;
+    width: 70%;
+}
+
+.fullname {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+form button {
+    width: 60%;
+}
+
+form p {
+    text-align: center;
+    font-size: 12px;
+    padding: 24px;
+}
+
+.explications p {
+    padding-top: 32px;
+}
+
+@media screen and (max-width: 900px){
+    main {
+        flex-direction: column-reverse;
+    }
+    .form-group {
+        width: 100%;
+    }
+
+    .fullname {
+        width: 100%;
+    }
+
+    .app-title p {
+        display: none;
+    }
+ 
+    h1 {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .explications {
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+ }

@@ -1,0 +1,155 @@
+.steps {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact p {
+    padding: 8px;
+}
+
+.contact .value {
+    color: green;
+}
+
+.contact .time {
+    color: #444444;
+}
+
+.contact .icon {
+    font-size: 32px;
+}
+
+.steps p {
+    text-align: start;
+}
+
+.step {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.adresses {
+    width: 90vw;
+}
+
+.adresse-livraison p {
+    text-align: left;
+    padding-top: 8px;
+}
+
+.adresse-livraison img {
+    height: 32px;
+    width: auto;
+}
+
+.adresse-livraison {
+    padding: 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.adresse-livraison strong {
+    padding-right: 8px;
+}
+
+.convoits {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.convoit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    background-color: #eeeeee;
+    padding: 20px;
+    box-shadow: -1px 2px 10px #cccccc;
+    margin: 20px;
+}
+
+.convoit i {
+    font-size: 32px;
+}
+
+.convoit div {
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+.convoit * {
+    color: #777777;
+}
+
+.convoit h3 {
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+.convoit p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.convoit:hover {
+    cursor: pointer;
+    transform: scale(1.005);
+}
+
+.selected-convoit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.selected-convoit * {
+    color: white;
+}
+
+
+@media screen and (max-width: 1024px){
+    .steps {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .step *{
+       text-align: start;
+    }  
+
+    .convoits {
+        grid-template-columns: auto;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sites {
+       display: grid;
+       grid-template-columns: auto auto auto;
+       gap: 8px;
+    }
+
+    .convoits {
+        grid-template-columns: auto;
+    }
+}

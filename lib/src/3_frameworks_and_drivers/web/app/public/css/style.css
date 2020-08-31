@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Proza Libre', sans-serif;
+    transition: 0.2s;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.actions-cn div {
+    display: none;
+}
+
+.actions-cn:hover {
+   cursor: pointer;
+}
+
+.actions-cn:hover div {
+    display: flex;
+    position: absolute;
+    right: 40px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: -1px 2px 10px #cccccc;
+    padding: 20px;
+}
+
+.actions-cn div a {
+    padding-bottom: 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: 1px -1px 10px #777777;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 40;
+}
+
+.logo-jal {
+    padding: 5%;
+}
+
+header .app-title img {
+    width: 78px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header .app-title p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .app-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.standard-button {
+    background-color: #f7e11c;
+    color: black;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 1px -2px 5px #cccccc22;
+    display: inline-block;
+    border: none;
+}
+
+.standard-button:focus {
+    outline: none;
+}
+
+.standard-button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    padding: 78px;
+    padding-bottom: 48px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #717FFD;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+textarea {
+    width: 80vw;
+    height: 200px;
+}
+
+.form-group input, select, textarea {
+    border: 1px solid #cccccc;
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.username i {
+    padding-right: 8px;
+}
+
+.username {
+    color: blue;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.username:hover {
+    cursor: pointer;
+    color: #777777;
+}
+
+a {
+    color: blue;
+}
+
+.forground-link {
+    color: blue;
+    font-size: 16px;
+}
+
+.circle-text {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    padding: 8px;
+}

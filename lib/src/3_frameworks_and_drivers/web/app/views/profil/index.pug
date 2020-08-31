@@ -1,0 +1,101 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="/css/style.css")
+    link(rel="stylesheet" href="/css/profil.css")
+    link(rel="shortcut icon" type="image/png" href="/img/logo-jal.png")
+
+
+  - let fullname = user.nom + " " + user.prenom;
+  body
+    header
+      .app-title
+        a(href="#" onclick="toggleDrawer()" class="menu-button")
+          i(class="fa fa-bars")
+        a(href="/" class="logo-link")
+          img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
+        p J'arrive à Libreville
+
+      a(class="username" onclick="toggleProfilMenu()") 
+        i(class="far fa-smile")
+        span=fullname
+
+    main
+      nav.hidden-menu
+        .personal-data
+          - let initials = user.nom.charAt(0) + (user.prenom? user.prenom.charAt(0) : "");
+          h2.initials=initials
+          p.fullname=fullname
+          p.email=user.email
+
+        a(href="#" class="update-profil" onclick="changeMenu(this, '.profil')") Modifier le profil
+
+        p(style="padding-top: 20px; padding-left: 16px; padding-right: 16px; text-align:center;") Besoin d'aide? Contactez le service support
+        a(href="mailto:support@jarrivealibreville.com") support@jarrivealibreville.com
+       
+        .bottom
+          a(href="/deconnexion") Déconnexion         
+      nav.drawer
+        a(href="#" class="drawer-option commande-item current-option" onclick="changeMenu(this, '.commande')") Mes commandes
+
+      .content
+        .commande(class="current-content")
+          h1 Mes commandes
+          .buttons
+            button(onclick="window.location='/achat_import/0/null'" class="standard-button") Nouvelle Achat + Import
+            button(onclick="window.location='/import/0/null'" class="standard-button") Nouvelle Import
+
+          table(class="hide-response")
+            thead
+              tr
+                th C
+                th Référence
+                th Etat
+                th Date
+                th Actions
+          .table-cn
+            table
+              thead
+                tr
+                  th C
+                  th Référence
+                  th Etat
+                  th Date
+                  th Actions
+              tbody
+
+        .profil
+          h1 Mes informations personnelles
+          form(action="/users/update" method="post")
+            .form-group
+              input#email(type="email" name="email" value=user.email)
+              label(for="email") Adresse Email
+
+            .fullname
+              .form-group
+                input#nom(type="text" name="nom" value=user.nom)
+                label(for="nom") Nom
+
+              .form-group
+                input#prenom(type="text" name="prenom" value=user.prenom)
+                label(for="prenom") Prénom
+
+            .form-group
+              input#adresse(type="text" name="adresse" value=user.adresse)
+              label(for="adresse") Adresse
+
+            .form-group
+              input#telephone(type="text" name="telephone" value=user.telephone)
+              label(for="telephone") Téléphone
+
+            .form-group
+              input#pays(type="text" name="pays" value=user.pays)
+              label(for="pays") Pays
+
+            button(class="standard-button") Appliquer les modifications
+
+    script(src="/js/profil.js")

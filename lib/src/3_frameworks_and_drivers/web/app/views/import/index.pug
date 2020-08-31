@@ -1,0 +1,39 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="/css/style.css")
+    link(rel="stylesheet" href="/css/achat_import.css")
+    link(rel="stylesheet" href="/css/import.css")
+    link(rel="stylesheet" href="/css/utils/step_by_step.css")
+    link(rel="shortcut icon" type="image/png" href="/img/logo-jal.png")
+
+
+  body
+  header
+    .app-title
+      img(src="/img/logo-jal.png" class="logo-jal" alt="Logo de j'arrive à libreville")
+
+    - let fullname = user.nom + " " + user.prenom;
+    a(href="/mon_compte" class="username") 
+      i(class="far fa-smile")
+      span=fullname
+
+  main
+    .one-step
+      include bienvenue.pug
+
+    .one-step
+      include explication.pug
+
+    .one-step
+      include site_marchand.pug
+
+    .one-step
+      include finissions.pug
+
+    script(src="/js/import.js")
+    script(src="/js/utils/step_by_step.js")

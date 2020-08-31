@@ -1,0 +1,115 @@
+section#site_marchand
+  h2 Choix du site marchand
+
+  p Rendez vous sur l'un des sites marchands suivants
+
+  p(style="padding-bottom: 20px;")
+   em(style="padding: 16px; color: red; display: inline-block;") Attention:  Si vous ne retrouvez pas votre site dans la liste, vous pouvez aller acheté sur un autre site et revenir pour l'adresse de livraison. 
+
+  a(href="https://google.com" target="blank") Recherchez votre site
+
+  .sites(style="margin-top: 20; margin-bottom: 40px")
+    a(href="https://www.amazon.fr/" target="blank")
+      img(src="/img/sites/amazon.png" alt="")
+    a(href="https://www.alibaba.com/" target="blank")
+      img(src="/img/sites/alibaba.png" alt="")
+    a(href="https://www.auctionexport.com/fr" target="blank")
+      img(src="/img/sites/auction.png" alt="")
+    a(href="https://www.lacentrale.fr/" target="blank")
+      img(src="/img/sites/lacentral.png" alt="")
+    a(href="https://www.gearbest.com/" target="blank")
+      img(src="/img/sites/gearbest.png" alt="")
+    a(href="https://www.lightinthebox.com/fr/" target="blank")
+      img(src="/img/sites/litb_logo.png" alt="")
+    a(href="https://shein.com/" target="blank")
+      img(src="/img/sites/shein.png" alt="")
+    a(href="https://taobao.com/" target="blank")
+      img(src="/img/sites/taobao.png" alt="")
+    a(href="https://www.mister-auto.com/" target="blank")
+      img(src="/img/sites/misterauto.svg" alt="")
+    a(href="https://wish.com/" target="blank")
+      img(src="/img/sites/wish.png" alt="")
+    a(href="https://aliexpress.com/" target="blank")
+      img(src="/img/sites/aliexpress.png" alt="")
+    a(href="https://ebay.com/" target="blank")
+      img(src="/img/sites/ebay.png" alt="")
+    a(href="https://fnac.com/" target="blank")
+      img(src="/img/sites/fnac.png" alt="")
+    a(href="https://www.veepee.fr/" target="blank")
+      img(src="/img/sites/vente_prive.png" alt="")
+    a(href="https://walmart.com/" target="blank")
+      img(src="/img/sites/walmart.png" alt="")
+    a(href="https://www.manomano.fr/" target="blank")
+      img(src="/img/sites/manomano.png" alt="")
+    a(href="https://otto.com/" target="blank")
+      img(src="/img/sites/otto.png" alt="")
+    a(href="https://jmbeex.shop/" target="blank")
+      img(src="/img/sites/jbmeex.png" alt="")
+    a(href="https://rakuten.com/" target="blank")
+      img(src="/img/sites/rakuten.png" alt="")
+    a(href="https://zentrada.network/" target="blank")
+      img(src="/img/sites/zentra.png" alt="")
+    a(href="https://cdiscount.com/" target="blank")
+      img(src="/img/sites/cdiscount.jpeg" alt="")
+
+  p(style="padding: 16px;") Comment voulez vous faire venir votre marchandise ?
+  .convoits
+    .convoit(onclick="changeConvoit('avion')" class="avion")
+      i(class="fas fa-plane")
+      h3 Avion
+
+    .convoit(onclick="changeConvoit('bateau')" class="selected-convoit bateau")
+      i(class="fa fa-ship")
+      h3 Bateau
+
+
+  p(style="margin-bottom: 40px;") Choisissez l'adresse de livraison en fonction du pays...
+
+  .adresses
+    .adresse-livraison
+      img(class="drapeau" src="/img/drapeau/drapeau_chine.png")
+      p ENTREPOT
+      p
+        strong Nom sur le colis
+        span Votre nom / Mr MIGUEL / JALBV
+      p
+        strong Wathsapp
+        span +8618680454290
+      p
+        strong Téléphone
+        span +8613826176948
+      p
+        strong Adresse
+        span No.16, Sanxiang, shaluowan East Road, Nansha District, Guangzhou City, Guangdong Province.
+      p
+        strong Cotation
+        span.cotation-chine 
+
+    .adresse-livraison
+      img(class="drapeau" src="/img/drapeau/drapeau_france.png")
+      p ENTREPOT
+      p
+        strong Nom sur l'adresse
+        span  MOUELE Ghislain Clinton.
+      p
+        strong Adresse
+        span 3 rue Raymond Morel, BP: 77120 Coulommiers.
+      p
+        strong Téléphone
+        span +33 763 168 329
+      p
+        strong Cotation
+        span.cotation-fr
+    .adresse-livraison
+      img(class="drapeau" src="/img/drapeau/drapeau_maroc.png")
+      p Résidence
+      p
+        strong Adresse
+        span Hay Moulay ABDELLAH, Rue 272, N°15 Casablanca.
+      p 
+        strong Tel
+        span +212640724562
+      p
+        strong Cotation
+        span.cotation-ma
+  button(class="standard-button" style="margin-top:20px;" onclick="updateConvoit()") Valider

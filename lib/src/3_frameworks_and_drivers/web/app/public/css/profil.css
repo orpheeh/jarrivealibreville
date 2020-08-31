@@ -1,0 +1,316 @@
+.username i {
+    padding-right: 8px;
+}
+
+.username {
+    color: blue;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.username:hover {
+    cursor: pointer;
+    color: #777777;
+}
+
+.content>div {
+    display: none;
+}
+
+.content .current-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 0;
+    text-align: start;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20% 75%;
+}
+
+.drawer {
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    box-shadow: 1px 2px 5px #cccccc;
+    width: 200px;
+    padding-top: 100px;
+}
+
+.menu-button {
+    display: none;
+}
+
+.drawer-option {
+    margin-top: 40px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.current-option {
+    background-color: rgba(27, 27, 53, 0.5);
+    margin-right: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hidden-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #B7CBF1;
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0px;
+    overflow: hidden;
+}
+
+.hidden-menu .personal-data {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.hidden-menu .personal-data h2 {
+    margin: 0px;
+    background-color: #E5EEFF;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 1px 5px #cccccc;
+    position: relative;
+    top: -45px;
+}
+
+.hidden-menu .personal-data p {
+    position: relative;
+    top: -30px;
+}
+
+.hidden-menu .personal-data .email {
+    font-size: 14px;
+    color: blue;
+}
+
+.hidden-menu .bottom {
+    flex-grow: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hidden-menu .update-profil {
+    padding-top: 40px;
+}
+
+.hidden-menu a {
+    color: black;
+}
+
+.hidden-menu a:hover {
+    color: #777777;
+}
+
+.hidden-menu-show {
+    display: flex;
+    width: 300px;
+}
+
+form {
+    width: 70%;
+    padding-left: 40px;
+}
+
+.form-group {
+    padding-top: 20px;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+tr:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+.buttons {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.buttons button {
+    padding: 8px;
+    margin-left: 16px;
+}
+
+.table-cn {
+    height: 100vh;
+    overflow: scroll;
+}
+
+thead {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.table-cn table thead {
+    opacity: 0;
+}
+
+.actions-cn button {
+    background-color: transparent;
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border: none;
+    font-weight: bold;
+}
+
+.actions-cn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        width: 100vw;
+    }
+    .menu-button {
+        display: block;
+        margin-right: 16px;
+    }
+    .drawer {
+        width: 0px;
+        overflow: hidden;
+    }
+    .drawer-show {
+        width: 200px;
+    }
+    .app-title p {
+        display: none;
+    }
+    .menu-button {
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+    }
+    .drawer {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        padding-top: 100px;
+    }
+    main {
+        grid-template-columns: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    tr {
+        text-align: center;
+    };
+
+    tr span {
+        font-size: 12px;
+    }
+    .table-cn {
+        overflow-x: scroll;
+        width: 100vw;
+    }
+    
+    .hide-response {
+        display: none;
+    }
+
+    td {
+        vertical-align: middle;
+    }
+
+    .table-cn table thead {
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        margin: 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .buttons button {
+        margin: 0px;
+        margin-bottom: 8px;
+        width: 90%;
+    }
+
+    .content {
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    table * {
+        font-size: 14px;
+    }
+
+    .content .current-content {
+        padding: 8px;
+    }
+
+    h1 {
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,40 @@
+
+table {
+    margin: 20px;
+}
+
+
+.form-group label+input[type="file"] {
+    display: block;
+    background-color: #444444;
+    padding: 8px 32px;
+    color: white;
+}
+
+.form-group input[type='file'] {
+    display: none;
+}
+
+.form-group {
+    padding: 8px 0px;
+}
+
+.form-group label:hover+input[type="file"] {
+    cursor: pointer;
+    background-color: #111111;
+}
+
+main {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 16px;
+    margin-top: 40px;
+    padding: 0px;
+}
