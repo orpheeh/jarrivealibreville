@@ -18,11 +18,14 @@ html
 
       if user
         - let fullname = user.nom + " " + user.prenom;
-        a(href="/mon_compte" class="username") 
-          i(class="far fa-smile")
-          span=fullname
+        nav
+          a(href="#ventekilo" class="yellow-button standard-button") Vendez vos kilos
+          a(href="/mon_compte" class="username ") 
+            i(class="far fa-smile")
+            span=fullname
       else
         nav
+          a(href="#ventekilo" class="yellow-button standard-button") Vendez vos kilos
           a(href="/inscription") Inscription
           a(href="/connexion") Connexion
 
@@ -145,6 +148,54 @@ html
         i(class="fab fa-instagram-square" style="color:#E1306C;")
       a(href="https://wa.me/message/SSB3IRXBZHEFG1")
         i(class="fab fa-whatsapp" style="color:#25D366;")
+
+    section#ventekilo
+      h1 Vendez vos Kilos
+      
+      div.ventekilo-container
+        div.message
+          h2 Vous devez voyager et vous avez des kilogrammes en plus ?
+          p Vous pouvez les vendre à J'arrive à Libreville.
+          p Pour cela contactez nous en remplissant simplement ce formulaire.
+
+        form(action="/vk" method="post")
+          .form-group
+            input(type="text" id="nom" name="nom")
+            label(for="nom") Nom et prénom
+        
+          .form-group
+            input(type="text" id="nom" name="email")
+            label(for="nom") Email
+
+          .form-group
+            input(type="text" id="nom" name="telephone")
+            label(for="nom") Numero de téléphone
+
+          .form-group
+            input(type="number" id="kilo" name="kilo")
+            label(for="kilo") Nombre de kilos
+
+          .form-group
+            input(type="text" id="nom" name="depart")
+            label(for="nom") Pays de départ
+        
+          .form-group
+            input(type="text" id="nom" name="arrive")
+            label(for="nom") Pays d' arrivée
+
+          .form-group
+            input(type="text" id="aeroport_depart" name="aeroport_depart")
+            label(for="aeroport_depart") Aéoroport de départ
+
+          .form-group
+            input(type="text" id="aeroport_arrivee" name="aeroport_arrivee")
+            label(for="aeroport_arrivee") Aéoroport d'arrivée
+
+          .form-group
+            input(type="date" id="date" name="date")
+            label(for="nom") Date de départ
+          
+          button(class="standard-button" style="width:100%; margin-top: 16px;") Envoyer
 
     footer
       h1 Nous contacter

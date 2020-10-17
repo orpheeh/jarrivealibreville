@@ -342,3 +342,26 @@ footer p {
         overflow-x: hidden;
     }
 }
+
+#ventekilo form {
+    padding: 16px;
+}
+
+#ventekilo .form-group {
+    padding: 8px;
+}
+
+.ventekilo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ventekilo-container form {
+    width: 30rem;
+}
+
+.ventekilo-container .message {
+    padding: 24px;
+}

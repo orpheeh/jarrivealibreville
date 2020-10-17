@@ -1,0 +1,39 @@
+extends index.pug
+
+block content
+  - let label =" Vente de kilo" + (vk.length > 1 ? "s" : "")
+  p
+   strong(style="color: green")=vk.length
+   span=label
+  div(style="overflow-x:auto;")
+    table
+      thead
+        tr
+          th Nom & Prénom
+          th Email
+          th Téléphone
+          th Nb Kilos
+          th Départ
+          th Arrivée
+          th Date
+          th Aéoropt départ
+          th Aéoropt arrivée
+
+      tbody
+        for vv in vk
+          tr
+            - let d = new Date(vv.date);
+            - let mm = d.getMonth()+1;
+            - let strDate = (d.getDate() < 10 ? "0" : "") + d.getDate() + "/" + (mm < 10 ? "0" : "") + mm + "/" + d.getFullYear();
+            td=vv.nom
+            td=vv.email
+            td=vv.telephone
+            td=vv.kilo
+            td=vv.depart
+            td=vv.arrivee
+            td=strDate
+            td=vv.aeroport_depart
+            td=vv.aeroport_arrivee
+
+
+  script(src="/js/admin/script.js")
