@@ -1,0 +1,25 @@
+extends index.pug
+
+block content
+  - let label =" Utilisateur" + (users.length > 1 ? "s" : "")
+  p
+   strong(style="color: green")=users.length
+   span=label
+  div(style="overflow-x:auto;")
+    table
+      thead
+        tr
+          th Nom & Prénom
+          th Email
+          th Téléphone
+          th Adresse
+      tbody
+        for user in users
+          tr
+            - let fullname = user.nom + " " + user.prenom
+            td=fullname
+            td=user.email
+            td=user.telephone
+            td=user.adresse
+
+  script(src="/js/admin/script.js")
