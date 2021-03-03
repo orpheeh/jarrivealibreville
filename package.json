@@ -15,7 +15,7 @@
     "koa-views": "^6.3.0",
     "mongoose": "^5.9.19",
     "nodemailer": "^6.4.10",
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
